@@ -1,0 +1,23 @@
+.meu_sub
+{
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    animation: anima_sub 10s infinite alternate;
+    background-color: blue;
+}
+@keyframes anima_sub
+{
+    0% { transform: translate(0px, 0px) }
+    100%{ transform: translate(1200px, 0px) }
+
+}
+body
+{
+    background-color: blue;
+}
+@keyframes sub 
+{
+    0% { transform: translate(0px, 0px); }
+    100% { transform: translate(12000px, 0px);}
+}
