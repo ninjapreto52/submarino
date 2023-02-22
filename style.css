@@ -1,20 +1,39 @@
-h1
+:root {
+    --background: #063970;
+  }
+
+.title
 {
     position: relative;
-    font-size: 50px;
+    font-size: 100px;
+    color: yellow;
     display: flex;
     justify-content: center;
     top: 0px;
-    
+    opacity: 0; /* Set initial opacity to 0 */
+    animation-name: fade-in; /* Set animation name */
+    animation-duration: 1s; /* Set animation duration */
+    animation-delay: 2s; /* Set delay before animation starts */
+    animation-fill-mode: forwards; /* Keep final state of animation */
 }
 .meu_sub
 {
-    position:absolute;
-    animation: anima_sub 7s infinite;
-    background-color: blue;
-    width: 100%;
+    position: absolute;
+    animation: anima_sub 7s;
+    background-color: var(--background);
+    width: 50%;
+    left: -1500px;
    
 }
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
 @keyframes anima_sub
 {
     0% {  left: 150%; top: 0px;}
@@ -23,8 +42,9 @@ h1
 }
 body
 {
-    background-color:  blue;
+    background-color:  var(--background);
     background-image: url( "aguateste.avif");
+    font-family: 'Permanent Marker', cursive;
 }
 @keyframes sub 
 {
@@ -32,4 +52,8 @@ body
     100% { transform: translate(12000px, 0px);}
 }
 
+@keyframes fade-in {
+    from { opacity: 0; } /* Set initial state of animation */
+    to { opacity: 1; } /* Set final state of animation */
+  }
 
