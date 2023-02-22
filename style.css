@@ -1,23 +1,35 @@
+h1
+{
+    position: relative;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    top: 0px;
+    
+}
 .meu_sub
 {
     position:absolute;
-    top: 0px;
-    left: 0px;
-    animation: anima_sub 10s infinite alternate;
+    animation: anima_sub 7s infinite;
     background-color: blue;
+    width: 100%;
+   
 }
 @keyframes anima_sub
 {
-    0% { transform: translate(0px, 0px) }
-    100%{ transform: translate(1200px, 0px) }
+    0% {  left: 150%; top: 0px;}
+    100%{ left: -100%; top: 0px;}
 
 }
 body
 {
-    background-color: blue;
+    background-color:  blue;
+    background-image: url( "aguateste.avif");
 }
 @keyframes sub 
 {
     0% { transform: translate(0px, 0px); }
     100% { transform: translate(12000px, 0px);}
 }
+
+
